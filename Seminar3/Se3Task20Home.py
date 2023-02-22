@@ -23,15 +23,9 @@
 points = {1: 'AEIOULNSTRАВЕИНОРСТ', 2: 'DGДКЛМПУ', 3: 'BCMPБГЁЬЯ', 4: 'FHVWYЙЫ', 5: 'KЖЗХЦЧ', 8: 'JXШЭЮ', 10: 'QZФЩЪ'}
 
 
-def iscyrillic(text):
-    return bool()
-
-
 text = input('введите слово text на русском или английском языке заглавными буквами = ')
 res = 0
 for i in text:
-    if iscyrillic(text):
-        pass
     print(f'задано слово {text}')
     res = sum([k for i in text for k, v in points.items() if i in v])
     print(f'сумма баллов в заданном слове равна {res}')

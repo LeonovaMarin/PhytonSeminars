@@ -6,6 +6,6 @@
 
 N = int(input('введите число N'))
 K = 1
-while K < N:
+while K <= N:
     print(K, end=' ')
     K = K * 2
